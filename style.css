@@ -1,0 +1,161 @@
+
+* {
+    box-sizing:content-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #d5fdd0;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    padding-top: 50px;
+}
+
+.container {
+    width: 500px;
+    background-color: rgb(203, 255, 252);
+    padding: 30px;
+    border-radius: 10px;
+
+    box-shadow: 0 4px 15px rgb(27, 108, 111);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+#taskForm {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+#taskInput {
+    flex: 1;
+    padding: 10px;
+
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#taskForm button {
+    padding: 10px 15px;
+
+    border: none;
+    border-radius: 5px;
+
+    background-color: #10561d;
+    color: white;
+
+    cursor: pointer;
+}
+
+#taskForm button:hover {
+    background-color: #10561d;
+}
+
+#errorMessage {
+    color: red;
+    font-size: 14px;
+    min-height: 20px;
+
+    margin-bottom: 10px;
+}
+
+#searchInput {
+    width: 100%;
+
+    padding: 10px;
+
+    border: 1px solid #ccc;
+    border-radius: 5px;
+
+    margin-bottom: 15px;
+}
+
+.filters {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.filter-btn {
+    padding: 8px 12px;
+
+    border: 1px solid #ccc;
+    border-radius: 5px;
+
+    background-color: white;
+    cursor: pointer;
+}
+
+.filter-btn.active {
+    background-color: #10561d;
+    color: white;
+}
+
+#taskList {
+    list-style: none;
+}
+
+.task-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    padding: 12px;
+
+    border-bottom: 1px solid #ddd;
+}
+
+.task-title {
+    flex: 1;
+}
+
+.task-item.completed .task-title {
+    text-decoration: line-through;
+    color: #888;
+}
+
+.task-item button {
+    padding: 6px 9px;
+
+    border: none;
+    border-radius: 4px;
+
+    cursor: pointer;
+}
+
+.complete-btn {
+    background-color: #ddd;
+}
+
+.edit-btn {
+    background-color: #ddd;
+}
+
+.delete-btn {
+    background-color: #ddd;
+}
+
+.empty-state {
+    text-align: center;
+    color: #888;
+
+    padding: 25px 10px;
+}
+
+#taskCount {
+    margin-top: 20px;
+    text-align: center;
+    color: #666;
+    font-size: 14px;
+}
+

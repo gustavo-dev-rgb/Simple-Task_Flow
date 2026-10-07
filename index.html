@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>To-Do List</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <main class="container">
+
+        <h1>To-Do List</h1>
+
+        <form id="taskForm">
+
+            <input
+                type="text"
+                id="taskInput"
+                placeholder="Masukkan tugas..."
+                autocomplete="off"
+            >
+
+            <button type="submit">
+                Tambah
+            </button>
+
+        </form>
+
+        <p id="errorMessage"></p>
+
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Cari tugas..."
+            autocomplete="off"
+        >
+
+        <div class="filters">
+
+            <button class="filter-btn active" data-filter="all">
+                Semua
+            </button>
+
+            <button class="filter-btn" data-filter="active">
+                Aktif
+            </button>
+
+            <button class="filter-btn" data-filter="completed">
+                Selesai
+            </button>
+
+        </div>
+
+        <ul id="taskList"></ul>
+
+        <p id="taskCount"></p>
+
+    </main>
+
+</body>
+</html>
+
